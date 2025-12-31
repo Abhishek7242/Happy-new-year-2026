@@ -3,12 +3,24 @@ let backgroundMusic = null;
 let isMusicPlaying = false;
 
 function initMusic() {
-    // Create audio element (you can replace with actual music file)
+    // Create audio element with local music file
     backgroundMusic = new Audio();
-    // For now, using a placeholder. Replace with actual music URL or file
-    // backgroundMusic.src = 'path/to/your/music.mp3';
+
+    // Using your custom audio file
+    backgroundMusic.src = 'WhatsApp Audio 2025-12-31 at 11.41.07 PM.mpeg';
+
     backgroundMusic.loop = true;
     backgroundMusic.volume = 0.3;
+
+    // Handle errors gracefully
+    backgroundMusic.addEventListener('error', function () {
+        console.log('Music file not found. Please add a music.mp3 file to the folder.');
+        // Hide music player if no music file
+        const musicPlayer = document.getElementById('musicPlayer');
+        if (musicPlayer) {
+            musicPlayer.style.display = 'none';
+        }
+    });
 }
 
 function toggleMusic() {
@@ -26,12 +38,14 @@ function toggleMusic() {
         pauseIcon.style.display = 'none';
         isMusicPlaying = false;
     } else {
-        backgroundMusic.play().catch(e => {
+        backgroundMusic.play().then(() => {
+            playIcon.style.display = 'none';
+            pauseIcon.style.display = 'block';
+            isMusicPlaying = true;
+        }).catch(e => {
             console.log('Music play failed:', e);
+            alert('Please add a music file named "music.mp3" to the folder to enable background music.');
         });
-        playIcon.style.display = 'none';
-        pauseIcon.style.display = 'block';
-        isMusicPlaying = true;
     }
 }
 
