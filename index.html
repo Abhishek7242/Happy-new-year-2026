@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Happy New Year 2026 ✨</title>
+    <meta
+      name="description"
+      content="A special New Year 2026 wish filled with love and celebration"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Poppins:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Loading Screen -->
+    <div id="loader" class="loader">
+      <div class="loader-content">
+        <div class="loader-heart">💖</div>
+        <h2 class="loader-text">Loading Magic...</h2>
+        <div class="loader-spinner"></div>
+      </div>
+    </div>
+
+    <!-- Scroll Progress Indicator -->
+    <div class="scroll-indicator" id="scrollIndicator"></div>
+
+    <!-- Music Player -->
+    <div class="music-player" id="musicPlayer">
+      <button class="music-toggle" id="musicToggle" title="Play Music">
+        <svg class="play-icon" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M8 5v14l11-7z" />
+        </svg>
+        <svg
+          class="pause-icon"
+          viewBox="0 0 24 24"
+          fill="currentColor"
+          style="display: none"
+        >
+          <path d="M6 4h4v16H6V4zm8 0h4v16h-4V4z" />
+        </svg>
+      </button>
+      <span class="music-label">🎵 Music</span>
+    </div>
+
+    <!-- Floating Particles Container -->
+    <div class="particles-container" id="particlesContainer"></div>
+    <!-- Animated Background -->
+    <div class="background-animation">
+      <div class="stars"></div>
+      <div class="fireworks-container" id="fireworksContainer"></div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="container">
+      <!-- Hero Section -->
+      <section class="hero-section">
+        <div class="countdown-badge">
+          <span id="countdown"></span>
+        </div>
+
+        <h1 class="main-title">
+          <span class="title-line">Happy New Year</span>
+          <span class="year">2026</span>
+          <span class="name">Shiwanshi</span>
+        </h1>
+
+        <div class="heart-icon">
+          <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M50,90 C50,90 10,65 10,40 C10,25 20,15 30,15 C40,15 50,25 50,25 C50,25 60,15 70,15 C80,15 90,25 90,40 C90,65 50,90 50,90 Z"
+              fill="currentColor"
+            />
+          </svg>
+        </div>
+
+        <p class="subtitle">
+          May this year bring you endless joy, beautiful moments,<br />
+          and dreams that come true ✨
+        </p>
+
+        <button class="cta-button" onclick="revealMessage()">
+          <span>Open Your Special Message</span>
+          <svg
+            class="arrow"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+          >
+            <path d="M5 12h14M12 5l7 7-7 7" />
+          </svg>
+        </button>
+      </section>
+
+      <!-- Message Section (Hidden Initially) -->
+      <section class="message-section" id="messageSection">
+        <div class="message-card">
+          <div class="sparkle-icon">✨</div>
+          <h2>A Special Wish For You</h2>
+          <div class="message-content">
+            <p>As we step into 2026, I want you to know how special you are.</p>
+            <p>May this year be filled with:</p>
+            <ul class="wishes-list">
+              <li>
+                <span class="icon">🌟</span>
+                <span>Magical moments that take your breath away</span>
+              </li>
+              <li>
+                <span class="icon">💖</span>
+                <span>Love that makes your heart smile</span>
+              </li>
+              <li>
+                <span class="icon">🎯</span>
+                <span>Success in everything you pursue</span>
+              </li>
+              <li>
+                <span class="icon">🌈</span>
+                <span>Adventures that create beautiful memories</span>
+              </li>
+              <li>
+                <span class="icon">✨</span>
+                <span>Dreams that turn into reality</span>
+              </li>
+            </ul>
+            <p class="closing-message">
+              Here's to a year of laughter, growth, and unforgettable
+              experiences.<br />
+              <strong>You deserve all the happiness in the world! 🎉</strong>
+            </p>
+          </div>
+          <div class="signature">With love and best wishes 💕</div>
+        </div>
+      </section>
+
+      <!-- Photo Gallery Section -->
+      <section class="photo-gallery-section" id="photoGallery">
+        <h2 class="section-title">Beautiful Memories 📸</h2>
+        <p class="gallery-subtitle">
+          Every moment with you is worth celebrating
+        </p>
+
+        <div class="carousel-container">
+          <div class="carousel-3d" id="carousel3d">
+            <!-- Photo 1 -->
+            <div class="carousel-item">
+              <div class="photo-wrapper">
+                <img
+                  src="WhatsApp Image 2025-12-31 at 11.09.33 PM.jpeg"
+                  alt="Beautiful moment 1"
+                  class="photo-img"
+                />
+                <div class="photo-overlay">
+                  <span class="photo-caption">✨ Radiant Smile</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Photo 2 -->
+            <div class="carousel-item">
+              <div class="photo-wrapper">
+                <img
+                  src="WhatsA12-31 at 11.09.33 PM.jpeg"
+                  alt="Beautiful moment 2"
+                  class="photo-img"
+                />
+                <div class="photo-overlay">
+                  <span class="photo-caption">💖 Pure Joy</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Photo 3 -->
+            <div class="carousel-item">
+              <div class="photo-wrapper">
+                <img
+                  src="WhatsApp Image 2025-12-.jpeg"
+                  alt="Beautiful moment 3"
+                  class="photo-img"
+                />
+                <div class="photo-overlay">
+                  <span class="photo-caption">🌸 Graceful</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Photo 4 -->
+            <div class="carousel-item">
+              <div class="photo-wrapper">
+                <img
+                  src="WhatsApp Image 2025-12-31 at 11..jpeg"
+                  alt="Beautiful moment 4"
+                  class="photo-img"
+                />
+                <div class="photo-overlay">
+                  <span class="photo-caption">✨ Stunning</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Carousel Controls -->
+          <div class="carousel-controls">
+            <button class="carousel-btn prev-btn" onclick="rotateCarousel(-1)">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path d="M15 18l-6-6 6-6" />
+              </svg>
+            </button>
+            <button class="carousel-btn next-btn" onclick="rotateCarousel(1)">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path d="M9 18l6-6-6-6" />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- Interactive Gallery Section -->
+      <section class="gallery-section" id="gallerySection">
+        <h2 class="section-title">Cheers to New Beginnings 🥂</h2>
+        <div class="gallery-grid">
+          <div class="gallery-card" style="--delay: 0s">
+            <div class="card-icon">🎊</div>
+            <h3>Celebrate</h3>
+            <p>Every moment is worth celebrating</p>
+          </div>
+          <div class="gallery-card" style="--delay: 0.1s">
+            <div class="card-icon">🌸</div>
+            <h3>Bloom</h3>
+            <p>Grow into your best self</p>
+          </div>
+          <div class="gallery-card" style="--delay: 0.2s">
+            <div class="card-icon">💫</div>
+            <h3>Shine</h3>
+            <p>Let your light illuminate the world</p>
+          </div>
+          <div class="gallery-card" style="--delay: 0.3s">
+            <div class="card-icon">🎨</div>
+            <h3>Create</h3>
+            <p>Paint your year with vibrant colors</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Footer -->
+      <footer class="footer">
+        <p>Made with 💖 for an amazing person</p>
+        <p class="year-text">Welcome 2026!</p>
+      </footer>
+    </div>
+
+    <!-- Floating Hearts -->
+    <div class="floating-hearts" id="floatingHearts"></div>
+
+    <script src="script.js"></script>
+    <script src="photo-3d.js"></script>
+    <script src="enhancements.js"></script>
+  </body>
+</html>
